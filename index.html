@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier Ammy Croch — Hecho a mano con amor</title>
+  <meta name="description" content="Atelier Ammy Croch: piezas de crochet hechas a mano, personalizadas y listas para enamorar. Encuentra amigurumis, accesorios, decoración y regalos únicos." />
+  <meta property="og:title" content="Atelier Ammy Croch" />
+  <meta property="og:description" content="Piezas de crochet hechas a mano: amigurumis, accesorios y decoración." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://placehold.co/1200x630/png?text=Atelier+Ammy+Croch" />
+  <meta name="theme-color" content="#e9b8d6" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-theme="artesanal">
+  <!-- NAV -->
+  <header class="nav" aria-label="Barra de navegación">
+    <div class="container nav-inner">
+      <a class="brand" href="#" aria-label="Inicio Atelier Ammy Croch">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <div>
+          <div class="brand-name">Atelier Ammy Croch</div>
+          <small class="muted">Crochet hecho a mano</small>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Secciones principales">
+        <a href="#coleccion">Colección</a>
+        <a href="#personalizados">Personalizados</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="theme-switcher" role="group" aria-label="Cambiar estilo">
+        <button class="btn btn-outline" data-swap-theme="artesanal" title="Tema Artesanal">Artesanal</button>
+        <button class="btn btn-outline" data-swap-theme="minimal" title="Tema Minimal">Minimal</button>
+        <button class="btn btn-outline" data-swap-theme="vibrante" title="Tema Vibrante">Vibrante</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <div class="hero-badges">
+          <span class="chip">✨ Hecho a mano</span>
+          <span class="chip">💝 Personalizable</span>
+          <span class="chip">🚚 Envío nacional</span>
+        </div>
+        <h1>Crochet que cuenta historias —
+          <span class="grad">Atelier Ammy Croch</span>
+        </h1>
+        <p>Amigurumis, accesorios y decoración únicos para regalar (o regalarte). Diseñamos contigo, elegimos colores y entregamos una pieza que te enamora al primer vistazo.</p>
+        <div class="row-gap">
+          <a class="btn" href="#coleccion">Ver colección</a>
+          <a class="btn btn-outline" href="#personalizados">Pedir un personalizado</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="/assets/Dragon.png" alt="Selección de productos de crochet color pastel" loading="eager" width="720" height="520" />
+        <div class="blob" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLECCIÓN DESTACADA -->
+  <section id="coleccion">
+    <div class="container">
+      <div class="section-title">
+        <h2>Colección destacada</h2>
+        <p class="muted">Piezas listas para envío inmediato</p>
+      </div>
+      <div class="grid grid-3">
+        <!-- Producto 1 -->
+        <article class="card product" itemscope itemtype="https://schema.org/Product">
+          <img src="/assets/ballena.png" alt="Amigurumi ballena" loading="lazy" width="600" height="480"/>
+          <h3 itemprop="name">Amigurumi Ballena</h3>
+          <p class="muted" itemprop="description">Suave, tierno y perfecta para primeros abrazos.</p>
+          <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="28.000">28.000 COP</span>
+          </div>
+          <div class="tags">
+            <span class="chip">Algodón</span>
+            <span class="chip">Hipoalergénico</span>
+          </div>
+          <a class="btn" href="#contacto">Comprar ahora</a>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="card product" itemscope itemtype="https://schema.org/Product">
+          <img src="/assets/Susuwatari.png" alt="Gorro estilo boho tejido a crochet" loading="lazy" width="600" height="480"/>
+          <h3 itemprop="name">Llavero Susuwatari</h3>
+          <p class="muted" itemprop="description">Ligero y combinable. Colores a elección.</p>
+          <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="priceCurrency" content="COP">$</span><span itemprop="price" content="20.000">20.000 COP</span>
+          </div>
+          <div class="tags">
+            <span class="chip">Llaveros</span>
+            <span class="chip">Accesorios</span>
+          </div>
+          <a class="btn" href="#contacto">Comprar ahora</a>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="card product" itemscope itemtype="https://schema.org/Product">
+          <img src="/assets/ramo.png" alt="Set de posavasos con forma de flor" loading="lazy" width="600" height="480"/>
+          <h3 itemprop="name">Ramo de flores</h3>
+          <p class="muted" itemprop="description">Un detalle dulce para tu mesa o para regalar.</p>
+          <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="priceCurrency" content="COP">$</span><span itemprop="price" content="150.000">150.000 COP</span>
+          </div>
+          <div class="tags">
+            <span class="chip">Lavable</span>
+            <span class="chip">Duradero</span>
+          </div>
+          <a class="btn" href="#contacto">Comprar ahora</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALOR DIFERENCIAL -->
+  <section>
+    <div class="container grid grid-3">
+      <div class="card feature">
+        <div class="feature-icon">♥</div>
+        <div>
+          <h3>Hecho para ti</h3>
+          <p class="muted">Piezas únicas, hechas a mano, con la historia y los colores que tú eliges.</p>
+        </div>
+      </div>
+      <div class="card feature">
+        <div class="feature-icon">⏱</div>
+        <div>
+          <h3>Entrega puntual</h3>
+          <p class="muted">Tiempos claros de producción y seguimiento de tu pedido.</p>
+        </div>
+      </div>
+      <div class="card feature">
+        <div class="feature-icon">🌿</div>
+        <div>
+          <h3>Materiales de calidad</h3>
+          <p class="muted">Algodones suaves, hipoalergénicos y terminaciones cuidadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALIZADOS CTA -->
+  <section id="personalizados">
+    <div class="container card pad">
+      <div class="grid grid-2" style="align-items:center">
+        <div>
+          <h2>¿Quieres algo 100% a tu estilo?</h2>
+          <p class="muted">Cuéntanos tu idea (personaje, colores, tamaño) y lo hacemos realidad. Te asesoramos con paletas y opciones de hilo.</p>
+          <div class="row-gap">
+            <a class="btn" href="https://wa.me/573000000000?text=Hola%20Ammy!%20Quiero%20un%20pedido%20personalizado%20de%20crochet" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            <a class="btn btn-outline" href="#contacto">Escribir mensaje</a>
+          </div>
+        </div>
+        <div>
+          <img src="/assets/personalizados.png" alt="Collage de encargos personalizados de crochet" loading="lazy" width="640" height="420"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios">
+    <div class="container">
+      <div class="section-title">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p class="muted">Más de 300 sonrisas entregadas</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card testimonial">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <strong>Valentina</strong>
+            <p class="muted">“El amigurumi llegó precioso y con un empaque divino. ¡Se nota el amor en cada puntada!”</p>
+          </div>
+        </div>
+        <div class="card testimonial">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <strong>Nicolás</strong>
+            <p class="muted">“Pedí un gorro con mis colores favoritos. Quedó perfecto y llegó a tiempo.”</p>
+          </div>
+        </div>
+        <div class="card testimonial">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <strong>Laura</strong>
+            <p class="muted">“Excelente atención y asesoría. Compré posavasos para un regalo y les encantaron.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>Preguntas frecuentes</h2>
+        <p class="muted">Todo claro desde el primer día</p>
+      </div>
+      <div class="grid" style="gap:.8rem">
+        <details>
+          <summary>¿Cuánto tardan los pedidos personalizados?</summary>
+          <p class="muted">Dependiendo del tamaño y complejidad, entre 3 y 10 días hábiles. Te daremos una fecha exacta al confirmar tu diseño.</p>
+        </details>
+        <details>
+          <summary>¿Qué materiales utilizan?</summary>
+          <p class="muted">Principalmente algodón hipoalergénico de alta calidad y relleno suave, apto para uso infantil.</p>
+        </details>
+        <details>
+          <summary>¿Hacen envíos?</summary>
+          <p class="muted">Sí, realizamos envíos nacionales. Para envíos internacionales, consúltanos por WhatsApp.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="container">
+    <div class="section-title">
+      <h2>Hablemos de tu idea</h2>
+      <p class="muted">Responderemos en menos de 24 horas</p>
+    </div>
+    <div class="grid grid-2">
+      <form id="contact-form" class="card pad" onsubmit="enviarFormulario(event)">
+        <input required type="text" name="nombre" placeholder="Tu nombre" aria-label="Nombre" />
+        <div class="spacer-sm"></div>
+        <input required type="email" name="email" placeholder="Tu correo" aria-label="Correo" />
+        <div class="spacer-sm"></div>
+        <textarea required name="mensaje" rows="5" placeholder="Cuéntanos qué te gustaría (colores, tamaño, referencia)" aria-label="Mensaje"></textarea>
+        <div class="spacer-md"></div>
+        <button class="btn" type="submit">Enviar mensaje</button>
+        <p id="form-status" class="muted" role="status" aria-live="polite"></p>
+      </form>
+      <div class="card pad">
+        <h3>Otros canales</h3>
+        <p class="muted">Escríbenos por <a href="https://wa.me/573000000000" target="_blank" rel="noopener">WhatsApp</a> o en Instagram <a href="https://instagram.com/atelierammycroch" target="_blank" rel="noopener">@atelierammycroch</a>.</p>
+        <p class="muted">Horario: Lun–Sáb 10:00–5:00</p>
+        <div class="grid grid-2">
+          <img src="https://placehold.co/500x360/jpg?text=Taller+Atelier" alt="Mesa de trabajo con lanas y ganchos de crochet" loading="lazy" width="500" height="360"/>
+          <img src="https://placehold.co/500x360/jpg?text=Proceso+de+tejido" alt="Proceso de tejido a crochet en primer plano" loading="lazy" width="500" height="360"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- PIE -->
+  <footer>
+    <div class="container foot">
+      <div>© <span id="year"></span> Atelier Ammy Croch. Todos los derechos reservados.</div>
+      <div class="socials">
+        <a class="chip" href="#" aria-label="Instagram">IG</a>
+        <a class="chip" href="#" aria-label="TikTok">TT</a>
+        <a class="chip" href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD SEO BÁSICO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Atelier Ammy Croch",
+    "url": "https://atelierammycroch.example.com",
+    "logo": "https://placehold.co/300x300/png?text=AAC",
+    "sameAs": [
+      "https://instagram.com/atelierammycroch",
+      "https://facebook.com/atelierammycroch"
+    ],
+    "makesOffer": {
+      "@type": "OfferCatalog",
+      "name": "Colección crochet",
+      "itemListElement": [
+        {"@type":"Product","name":"Amigurumi Osito"},
+        {"@type":"Product","name":"Gorro Boho"},
+        {"@type":"Product","name":"Set Posavasos Flor"}
+      ]
+    }
+  }
+  </script>
+</body>
+</html>
