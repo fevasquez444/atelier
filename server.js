@@ -11,10 +11,15 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// 👉 Servir archivos estáticos desde la carpeta actual
+// 👉 Servir archivos estáticos desde /public
 app.use(express.static(path.join(__dirname, "public")));
 
-// Ruta para procesar el formulario
+// 👉 Ruta raíz: devolver index.html
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+// 👉 Ruta para procesar formulario
 app.post("/send", async (req, res) => {
   const { nombre, email, mensaje } = req.body;
 
