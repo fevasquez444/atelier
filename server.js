@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // 👉 Servir archivos estáticos desde la carpeta actual
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, "public")));
+
 
 // Ruta raíz: enviar el index.html
 app.get("/", (req, res) => {
