@@ -14,12 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 // 👉 Servir archivos estáticos desde la carpeta actual
 app.use(express.static(path.join(__dirname, "public")));
 
-
-// Ruta raíz: enviar el index.html
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
-
 // Ruta para procesar el formulario
 app.post("/send", async (req, res) => {
   const { nombre, email, mensaje } = req.body;
